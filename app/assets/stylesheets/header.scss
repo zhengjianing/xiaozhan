@@ -8,7 +8,7 @@ header {
   .header-line {
     width: 20%;
     padding-bottom: 75px;
-    border-top: 3px gainsboro solid;
+    border-top: 3px gainsboro dotted;
     display: inline-block;
   }
 
@@ -37,9 +37,7 @@ header {
           text-decoration: none;
 
           &:hover {
-            color: #800080;
-            //font-weight: bold;
-            //font-size: 25px;
+            color: #e3594d;
             padding-bottom: 15px;
             border-bottom: 3px solid green;
           }
