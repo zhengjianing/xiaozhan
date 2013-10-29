@@ -1,33 +1,8 @@
 header
-  #nav-bar
-    .logo.left
-      | 一杯清茶
-    ul.right
-      li#photos
-        a href="#" title="photos"
-          | 摄影
-      li#projects
-        a href="#" title="projects"
-          | 编程
-      li#notes
-        a href="#" title="notes"
-          | 笔记
-      li#diary
-        a href="#" title="diary"
-          | 日志
-      li#sharings
-        a href="#" title="share"
-          | 分享
-section#container
-  #homepage-image-container
+  == render :partial => 'header'
 
-  #homepage-info-container.rows
-    #introduction.row-7
-      | 一杯清茶，一缕阳光
-      br
-      | 静静的，开始心的旅程
-    #personal-info.row-3
-      | 个人介绍
-      br
-      | 茶，书，摄影，写字，程序员，女。
-      br
+section
+  == render :partial => 'main_section'
+
+footer
+  == render :partial => 'footer'

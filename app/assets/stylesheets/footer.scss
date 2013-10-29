@@ -1,0 +1,14 @@
+footer {
+  width: 100%;
+  background: image-url("footer-bg.png") repeat-x left top #fcfcfd;
+
+  .footer-content {
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-family: "Cambria W01 Regular", "Cambria", "Times New Roman", Times, serif;
+    font-size: 13px;
+    color: #82818c;
+    letter-spacing: 0.1em;
+  }
+}
