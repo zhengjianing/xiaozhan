@@ -55,7 +55,9 @@ section .content {
   padding-top: 50px; }
 footer {
   width: 100%;
-  background: url(/assets/footer-bg.png) repeat-x left top #fcfcfd; }
+  background: url(/assets/footer-bg.png) repeat-x left top #fcfcfd;
+  position: absolute;
+  bottom: 0; }
   footer .footer-content {
     width: 940px;
     margin: 0 auto;
@@ -97,14 +99,15 @@ header {
           color: #82818c;
           text-decoration: none; }
           header #nav-bar ul li a:hover {
+            cursor: pointer;
             color: #e3594d;
             padding-bottom: 15px;
             border-bottom: 3px solid green; }
       header #nav-bar ul li:nth-child(2) {
         margin-right: 50px; }
       header #nav-bar ul li:nth-child(4) {
-        margin-left: 215px; }
-      header #nav-bar ul .logo {
+        margin-left: 140px; }
+      header #nav-bar ul .logo a {
         top: 27px;
         position: absolute;
         width: 90px;
@@ -112,13 +115,18 @@ header {
         background: url(/assets/home.png);
         background-size: 100%;
         background-position: 0px 0px;
-        cursor: pointer; }
-#main-section #homepage-image-container {
-  height: auto; }
-#main-section #homepage-info-container {
+        cursor: pointer;
+        padding: 0 !important;
+        border: none !important; }
+#main-section #homepage-image-container img {
   width: 100%;
+  height: 500px; }
+#main-section #homepage-info-container {
+  width: 1000px;
+  margin: 0 auto;
   line-height: 33px;
-  padding-top: 40px; }
+  padding-top: 50px;
+  padding-bottom: 30px; }
   #main-section #homepage-info-container #introduction {
     font-family: cursive;
     font-size: 20px;
@@ -127,7 +135,7 @@ header {
     font-family: fantasy;
     font-size: 15px;
     color: #000000; }
-section {
+.section {
   width: 1000px;
   margin: 0 auto;
   padding-top: 50px;

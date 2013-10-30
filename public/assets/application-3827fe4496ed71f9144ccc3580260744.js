@@ -820,9 +820,20 @@
   };
 
 }).call(this);
-$(window).load(function() {
-  $('#slider').nivoSlider();
-});
+var ImageSlider = function () {
+  var api = {};
+
+  api.initialize = function () {
+    $('#slider').nivoSlider();
+  };
+
+  return api;
+};
+//$(function () {
+
+//  ImageSlider().initialize();
+
+//});
 /*
  * jQuery Nivo Slider v3.2
  * http://nivo.dev7studios.com
