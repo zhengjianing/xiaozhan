@@ -16,7 +16,6 @@
 /tmp
 
 .idea/
-bin/
 log/
 public/
 test/
