@@ -1,12 +1,17 @@
 #main-section {
   #homepage-image-container {
-    height: auto;
+    img {
+      width: 100%;
+      height: 500px;
+    }
   }
 
   #homepage-info-container {
-    width: 100%;
+    width: 1000px;
+    margin: 0 auto;
     line-height: 33px;
-    padding-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 
     #introduction {
       font-family: cursive;

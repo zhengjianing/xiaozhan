@@ -37,6 +37,7 @@ header {
           text-decoration: none;
 
           &:hover {
+            cursor: pointer;
             color: #e3594d;
             padding-bottom: 15px;
             border-bottom: 3px solid green;
@@ -49,10 +50,10 @@ header {
       }
 
       li:nth-child(4) {
-        margin-left: 215px;
+        margin-left: 140px;
       }
 
-      .logo {
+      .logo a{
         top: 27px;
         position: absolute;
         width: 90px;
@@ -61,6 +62,8 @@ header {
         background-size: 100%;
         background-position: 0px 0px;
         cursor: pointer;
+        padding: 0 !important;
+        border: none !important;
       }
     }
   }

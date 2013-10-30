@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html
+head
+  title
+    | Xiaozhan
+
+  == stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+  == javascript_include_tag "application", "data-turbolinks-track" => true
+  == csrf_meta_tags
+
+header
+  header
+    .header-line
+    #nav-bar
+      ul
+        li#photos
+          | 摄影
+        li#projects
+          | 编程
+        li#logo.logo
+          == link_to '', {:controller => "homes", :action => "index"}
+        li#notes
+          == link_to '博客', {:controller => "blogs", :action => "index"}
+        li#sharings
+          | 分享
+    .header-line
+
+== yield
+
+footer
+  .footer-content
+    | contact me
