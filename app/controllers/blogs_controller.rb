@@ -65,6 +65,6 @@ class BlogsController < ApplicationController
   end
 
   def authenticate
-    @login = false
+    @login = session[:login]
   end
 end
