@@ -1,15 +1,11 @@
-#notice
-  == notice
-
-p
-  strong
-    | Title:
-  == @blog.title
-
-p
-  strong
-    | Content:
-  == @blog.content
-
-== link_to 'Edit', edit_blog_path(@blog)
-== link_to 'Back', blogs_path
+.section#blog-show
+  #notice
+    == notice
+  .blog-info
+    .title
+      == @blog.title
+    .content
+      == @blog.content
+    .links
+      == link_to '编辑', edit_blog_path(@blog), class: 'button submit-button'
+      == link_to '后退', blogs_path, class: 'button give-up-button'

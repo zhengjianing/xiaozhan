@@ -27,7 +27,14 @@ body {
   float: right;
 }
 
+a {
+  color: #000000 !important;
+  font-family: "Microsoft YaHei", "微软雅黑" !important;
+}
+
 section {
+  font-family: "Microsoft YaHei", "微软雅黑";
+
   .header {
     position: relative;
 
@@ -68,10 +75,10 @@ input, textarea {
 
 .button {
   display: inline-block;
-  height: 40px;
   width: 200px;
+  height: 40px;
   border-radius: 5px;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
   letter-spacing: 4px;
   text-align: center;
@@ -87,7 +94,8 @@ input, textarea {
 
 .give-up-button {
   background: orchid;
-  font-size: 24px;
+  float: right;
+  color: #000000;
 
   &:hover {
     background: blueviolet;
