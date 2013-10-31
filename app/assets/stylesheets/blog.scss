@@ -27,7 +27,7 @@
     .actions {
       width: 100%;
 
-      .submit-button {
+      .blue-button {
         font-size: 23px;
       }
     }
@@ -36,11 +36,12 @@
 
 #blog-show {
   #notice {
-
+    font-size: 15px;
+    text-align: center;
+    color: green;
   }
 
   .blog-info {
-
     .title {
       font-size: 25px;
       font-weight: 5000;
@@ -49,12 +50,36 @@
 
     .content {
       font-size: 15px;
-      padding:40px 0;
+      padding: 40px 0;
       min-height: 360px;
     }
 
     .links {
       height: 30px;
+    }
+  }
+}
+
+#blog-list {
+  .links {
+    height: 50px;
+  }
+
+  .blog-list-section {
+    height: 230px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+
+    .title {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .bref-content {
+      min-height: 100px;
+      font-size: 15px;
+      padding: 20px 0;
     }
   }
 }

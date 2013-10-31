@@ -18,7 +18,6 @@ class BlogsController < ApplicationController
 
   def create
     @blog = Blog.new(blog_params)
-
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
@@ -30,8 +29,6 @@ class BlogsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /blogs/1
-  # PATCH/PUT /blogs/1.json
   def update
     @blog = Blog.find(params[:id])
     respond_to do |format|
@@ -45,9 +42,8 @@ class BlogsController < ApplicationController
     end
   end
 
-  # DELETE /blogs/1
-  # DELETE /blogs/1.json
   def destroy
+    @blog = Blog.find(params[:id])
     @blog.destroy
     respond_to do |format|
       format.html { redirect_to blogs_url }

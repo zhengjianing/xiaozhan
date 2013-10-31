@@ -85,17 +85,35 @@ input, textarea {
   color: #000000;
 }
 
-.submit-button {
+.blue-button {
   background: skyblue;
   &:hover {
     background: #0089d1;
   }
 }
 
-.give-up-button {
+.yellow-button {
   background: orchid;
   float: right;
   color: #000000;
+
+  &:hover {
+    background: blueviolet;
+  }
+}
+
+.small-button {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-right: 30px;
+  background: burlywood;
+  float: right;
 
   &:hover {
     background: blueviolet;
