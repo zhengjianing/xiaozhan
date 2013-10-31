@@ -2,13 +2,14 @@
   .links
     == link_to '新建', new_blog_path, class: 'button yellow-button'
   .blog-lists
-    == @blogs.each do |blog|
-      .blog-list-section
-        .title
-          == blog.title
-        .bref-content
-          == blog.content[0..300] + '......'
-        .links
-          == link_to '删除', blog, method: :delete, data: { confirm: '你确定要删除吗?' }, class: 'small-button'
-          == link_to '编辑', edit_blog_path(blog), class: 'small-button'
-          == link_to '查看', blog, class: 'small-button'
+    - if @blogs.length > 1
+      == @blogs.each do |blog|
+        .blog-list-section
+          .title
+            == blog.title
+          .bref-content
+            == blog.content[0..300] + '......'
+          .links
+            == link_to '删除', blog, method: :delete, data: { confirm: '你确定要删除吗?' }, class: 'small-button'
+            == link_to '编辑', edit_blog_path(blog), class: 'small-button'
+            == link_to '查看', blog, class: 'small-button'
