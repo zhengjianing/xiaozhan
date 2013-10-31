@@ -1,0 +1,12 @@
+#admin-index
+  .form
+    == form_for(@user) do |f|
+      .field
+        == f.label :name, '名字'
+        == f.text_field :name
+      .field
+        == f.label :password, '密码'
+        == f.text_field :password
+
+      .actions
+        == f.submit '确定', class: 'button blue-button'

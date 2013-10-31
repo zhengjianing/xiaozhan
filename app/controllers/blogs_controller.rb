@@ -1,5 +1,7 @@
 class BlogsController < ApplicationController
 
+  before_filter :authenticate
+
   def index
     @blogs = Blog.all
   end
@@ -62,4 +64,7 @@ class BlogsController < ApplicationController
     params.require(:blog).permit(:title, :content)
   end
 
+  def authenticate
+    @login = false
+  end
 end

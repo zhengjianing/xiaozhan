@@ -1,0 +1,42 @@
+#admin-index {
+  width: 1000px;
+  height: 510px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .form {
+    width: 250px;
+    margin: 0 auto;
+
+    .field {
+      padding-bottom: 20px;
+      width: 100%;
+      margin: 0 auto;
+
+      label {
+        display: block;
+        font-size: 20px;
+        width: 100%;
+      }
+
+      input {
+        height: 40px;
+        border-radius: 5px;
+      }
+
+      textarea {
+        height: 250px;
+        border-radius: 5px;
+      }
+    }
+
+    .actions {
+      padding-top: 40px;
+
+      .button {
+        width: 100%;
+      }
+    }
+  }
+}

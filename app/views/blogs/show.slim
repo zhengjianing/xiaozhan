@@ -7,5 +7,6 @@
     .content
       == @blog.content
     .links
-      == link_to '编辑', edit_blog_path(@blog), class: 'button blue-button'
+      - if @login
+        == link_to '编辑', edit_blog_path(@blog), class: 'button blue-button'
       == link_to '返回列表', blogs_path, class: 'button yellow-button'

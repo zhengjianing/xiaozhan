@@ -1,6 +1,7 @@
-.section#blog-list
-  .links
-    == link_to '新建', new_blog_path, class: 'button yellow-button'
+section#blog-list
+  - if @login
+    .links
+      == link_to '新建', new_blog_path, class: 'button yellow-button'
   .blog-lists
     - if @blogs.length > 1
       == @blogs.each do |blog|
@@ -10,6 +11,7 @@
           .bref-content
             == blog.content[0..300] + '......'
           .links
-            == link_to '删除', blog, method: :delete, data: { confirm: '你确定要删除吗?' }, class: 'small-button'
-            == link_to '编辑', edit_blog_path(blog), class: 'small-button'
+            - if @login
+              == link_to '删除', blog, method: :delete, data: { confirm: '你确定要删除吗?' }, class: 'small-button'
+              == link_to '编辑', edit_blog_path(blog), class: 'small-button'
             == link_to '查看', blog, class: 'small-button'

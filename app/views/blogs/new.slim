@@ -1,20 +1,21 @@
 .section#blog-new
-  .form
-    == form_for(@blog) do |f|
-      - if @blog.errors.any?
-        #error_explanation
-          h2 == pluralize(@blog.errors.count, "error")
-            | prohibited this blog from being saved
-          ul
-            - @blog.errors.full_messages.each do |msg|
-              li == msg
+  - if @login
+    .form
+      == form_for(@blog) do |f|
+        - if @blog.errors.any?
+          #error_explanation
+            h2 == pluralize(@blog.errors.count, "error")
+              | prohibited this blog from being saved
+            ul
+              - @blog.errors.full_messages.each do |msg|
+                li == msg
 
-      .field
-        == f.label :title, '标题'
-        == f.text_field :title
-      .field
-        == f.label :content, '正文'
-        == f.text_area :content
-      .actions
-        == f.submit '提交', class: 'button blue-button'
-        == link_to '放弃', blogs_path, class: 'button yellow-button'
+        .field
+          == f.label :title, '标题'
+          == f.text_field :title
+        .field
+          == f.label :content, '正文'
+          == f.text_area :content
+        .actions
+          == f.submit '提交', class: 'button blue-button'
+          == link_to '放弃', blogs_path, class: 'button yellow-button'
