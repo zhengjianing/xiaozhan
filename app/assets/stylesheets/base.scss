@@ -57,3 +57,39 @@ section {
     padding-top: 50px;
   }
 }
+
+input, textarea {
+  width: 100%;
+  display: block;
+  border-radius: -6px;
+  border: 1px skyblue solid;
+  font-size: 20px;
+}
+
+.button {
+  display: inline-block;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #000000;
+}
+
+.submit-button {
+  background: skyblue;
+  &:hover {
+    background: #0089d1;
+  }
+}
+
+.give-up-button {
+  background: orchid;
+  font-size: 24px;
+
+  &:hover {
+    background: blueviolet;
+  }
+}

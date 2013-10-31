@@ -1,3 +1,38 @@
 #blog-new {
+  font-family: "Microsoft YaHei", "微软雅黑";
 
+  .form {
+    width: 100%;
+    padding-bottom: 30px;
+
+    .field {
+      padding-bottom: 50px;
+      width: 100%;
+      margin: 0 auto;
+
+      label {
+        display: block;
+        font-size: 20px;
+        width: 100%;
+
+      }
+
+      input {
+        height: 40px;
+      }
+
+      textarea {
+        height: 250px;
+      }
+    }
+
+    .actions {
+      width: 100%;
+
+      .give-up-button {
+        float: right;
+        color: #000000;
+      }
+    }
+  }
 }
