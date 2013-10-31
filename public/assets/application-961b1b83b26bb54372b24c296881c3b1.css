@@ -139,20 +139,25 @@ input, textarea {
 #blog-show .blog-info .links {
   height: 30px; }
 
-#blog-list .links {
-  height: 50px; }
-#blog-list .blog-list-section {
-  height: 230px;
-  padding-top: 100px;
-  padding-bottom: 30px; }
-  #blog-list .blog-list-section .title {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center; }
-  #blog-list .blog-list-section .bref-content {
-    min-height: 100px;
-    font-size: 15px;
-    padding: 20px 0; }
+#blog-list {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  #blog-list .links {
+    height: 50px; }
+  #blog-list .blog-list-section {
+    height: 230px;
+    padding-top: 100px;
+    padding-bottom: 30px; }
+    #blog-list .blog-list-section .title {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center; }
+    #blog-list .blog-list-section .bref-content {
+      min-height: 100px;
+      font-size: 15px;
+      padding: 20px 0; }
 footer {
   width: 100%;
   background: url(/assets/footer-bg.png) repeat-x left top #fcfcfd; }
@@ -238,6 +243,33 @@ header {
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px; }
+#admin-index {
+  width: 1000px;
+  height: 510px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  #admin-index .form {
+    width: 250px;
+    margin: 0 auto; }
+    #admin-index .form .field {
+      padding-bottom: 20px;
+      width: 100%;
+      margin: 0 auto; }
+      #admin-index .form .field label {
+        display: block;
+        font-size: 20px;
+        width: 100%; }
+      #admin-index .form .field input {
+        height: 40px;
+        border-radius: 5px; }
+      #admin-index .form .field textarea {
+        height: 250px;
+        border-radius: 5px; }
+    #admin-index .form .actions {
+      padding-top: 40px; }
+      #admin-index .form .actions .button {
+        width: 100%; }
 /*
  * jQuery Nivo Slider v3.2
  * http://nivo.dev7studios.com
