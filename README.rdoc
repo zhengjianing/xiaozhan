@@ -2,7 +2,6 @@
 
 rm -rf public
 git rm -r public
-rake kindeditor:assets
 rake assets:precompile
 git add .
 ci -m "compile assets for production"
