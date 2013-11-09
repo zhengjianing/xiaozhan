@@ -3,7 +3,7 @@ section#blog-list
     .links
       == link_to '新建', new_blog_path, class: 'button yellow-button'
   .blog-lists
-    - if @blogs.length > 1
+    - if @blogs.length > 0
       == @blogs.each do |blog|
         .blog-list-section
           .title
