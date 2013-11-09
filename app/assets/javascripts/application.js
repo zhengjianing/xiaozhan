@@ -12,5 +12,6 @@
 //
 //= require jquery-1.9.0.min
 //= require jquery_ujs
+//= require kindeditor
 //= require turbolinks
 //= require_tree .
