@@ -10,11 +10,9 @@
               li == msg
 
       .field
-        == f.label :title, '标题'
         == f.text_field :title
       .field
-        == f.label :content, '正文'
-        == f.text_area :content
+        == f.kindeditor :content
       .actions
         == f.submit '保存', class: 'button blue-button'
         == link_to '放弃', blog_path, class: 'button yellow-button'
