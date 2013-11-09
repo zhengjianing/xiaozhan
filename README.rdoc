@@ -7,3 +7,4 @@ git add .
 ci -m "compile assets for production"
 git push
 git push heroku master
+
